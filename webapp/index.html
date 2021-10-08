@@ -21,7 +21,7 @@
             data-sap-ui-compatVersion="edge"
 
             모듈은 처음에 선언적으로 로드 되도록 정의한다. webapp안에 Component.js가 기본경로로 되있다.
-            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+            data-sap-ui-oninit="module:walkthrough/index"
 
             비동기적으로 실행 되도록 구성한다.
             data-sap-ui-async="true"
@@ -30,12 +30,12 @@
             data-sap-ui-frameOptions="trusted"
         ></script>
     </head>
-    <body class="sapUiBody">
+    <body class="sapUiBody" id="content">
         <div
             data-sap-ui-component
             data-name="walkthrough"
             data-id="container"
             data-settings='{"id" : "walkthrough"}'
-        >Hello World</div>
+        ></div>
     </body>
 </html>
