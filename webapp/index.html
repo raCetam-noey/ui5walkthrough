@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>walkthrough</title>
+        <script
+            구성할 id 이름
+            id="sap-ui-bootstrap"
+
+            브라우저에 SAPUI5 코어 라이브러리를 찾을 위치를 알려준다
+            src="resources/sap-ui-core.js" 
+
+            SAPUI5 테마를 설정한다
+            data-sap-ui-theme="sap_fiori_3_dark"
+
+            SAPUI5 코어에 walkthrough 네임스페이스의 자원이 index.html과 같은 폴더에 있음을 알려준다.
+            data-sap-ui-resourceroots='{"walkthrough": "./"}'
+
+            SAPUI5의 최신 기능을 사용하기 위해 호환성 버전을 edge로 정의한다.
+            data-sap-ui-compatVersion="edge"
+
+            모듈은 처음에 선언적으로 로드 되도록 정의한다. webapp안에 Component.js가 기본경로로 되있다.
+            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+
+            비동기적으로 실행 되도록 구성한다.
+            data-sap-ui-async="true"
+
+			data-sap-ui-preload="async"
+            data-sap-ui-frameOptions="trusted"
+        ></script>
+    </head>
+    <body class="sapUiBody">
+        <div
+            data-sap-ui-component
+            data-name="walkthrough"
+            data-id="container"
+            data-settings='{"id" : "walkthrough"}'
+        >Hello World</div>
+    </body>
+</html>
