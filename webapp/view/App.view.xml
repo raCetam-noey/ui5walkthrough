@@ -11,6 +11,20 @@
 					<content>
                         <Button text="Say Hello"
                                 press=".onShowHello"></Button>
+
+                        <!-- 뷰에 sap.m.Input 컨트롤을 추가한다. XML 뷰에 대한 선언적 바인딩 구문을 사용하여 SAPUI5 모델에 해당 값을 바인딩한다.
+                        중괄호 {...}안에 /recipient/name은 모델의 경로를 선언하면 데이터를 바인딩 할 수 있다. -->
+
+                        <Input 
+                            value="{test>/recipient/name}"
+                            valueState="Information"
+                            valueStateText="인사말을 입력하세요"
+                            description="Hello {test>/recipient/name}"
+                            valueLiveUpdate="true"
+                            width="40%"/>
+                        <Input width="20%" type="Email"/>
+                        <MaskInput mask="999-99-999-9999-9" placeholderSymbol="_" placeholder="Enter ISBN"/>
+                        
                     </content>
 				</Page>
 			</pages>
